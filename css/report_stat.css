@@ -1,0 +1,140 @@
+.report-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 280px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 14px;
+    padding-bottom: 20px;
+}
+
+.border-img {
+    position: relative;
+    height: 60px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    margin-bottom: auto;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 80% 75%, 12% 75%, 0% 85%);
+}
+
+#work .border-img {
+    background-color: hsl(15, 100%, 70%);
+}
+
+#play .border-img {
+    background-color: hsl(195, 74%, 62%);
+}
+
+#study .border-img {
+    background-color: hsl(348, 100%, 68%);
+}
+
+#exercice .border-img {
+    background-color: hsl(145, 58%, 55%);
+}
+
+#social .border-img {
+    background-color: hsl(264, 64%, 52%);
+}
+
+#self-care .border-img {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.border-img img {
+    position: absolute;
+    inset: 0;
+    left: 180px;
+}
+
+.report-stat .type-stat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.report-stat h2 {
+    margin-left: 25px;
+    margin-right: auto;
+    color: hsl(236, 100%, 95%);
+    font-size: 20px;
+}
+
+.report-stat img {
+    margin-right: 25px;
+    max-width: fit-content;
+    max-height: fit-content;
+    object-fit: cover;
+}
+
+.report-stat .timeframe-hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.report-stat span:nth-child(1) {
+    color: hsl(236, 100%, 95%);
+    font-size: 26px;
+    margin-right: auto;
+    margin-left: 25px;
+    font-weight: 300;
+}
+
+.report-stat span:nth-child(2) {
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 25px;
+}
+
+@media (min-width: 1024px) {
+    #work  {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #play  {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    #study  {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+    }
+
+    #exercice {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #social  {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #self-care  {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+
+    .report-stat .timeframe-hours {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    .report-stat span:nth-child(1) {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .report-stat span:nth-child(2) {
+        margin: 0;
+    }
+}
