@@ -1,4 +1,4 @@
-const url = '../data.json';
+const url = './data.json';
 
 function getReponseJson(response) {
     if (!response.ok) {
