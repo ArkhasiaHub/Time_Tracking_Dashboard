@@ -18,123 +18,127 @@
   <main>
 
     <!-- Profile start -->
-    <div class="profile-report">
+    <section class="profile-report">
       <div class="profile">
-        <img src="images/image-jeremy.png" alt="profile-image">
+        <img src="images/image-jeremy.png" alt="Photo of jeremy, the profile owner">
         <div class="profile-description">
           Report for
           <h1>Jeremy Robson</h1>
         </div>
       </div>
 
-      <ul id="timeframe-list">
-        <li class="selected-timeframe"><button id="button-daily">Daily</button></li>
-        <li><button id="button-weekly">Weekly</button></li>
-        <li><button id="button-monthly">Monthly</button></li>
+      <ul id="timeframe-list" role="tablist" arial-label="Select timeframe">
+        <li class="selected-timeframe">
+          <button id="button-daily" role="tab" aria-selected="true" tabindex="0">Daily</button>
+        </li>
+        <li>
+          <button id="button-weekly" role="tab" aria-selected="false" tabindex="-1">Weekly</button>
+        </li>
+        <li><button id="button-monthly" role="tab" aria-selected="false" tabindex="-1">Monthly</button></li>
       </ul>
-    </div>
+    </section>
     <!-- Profile end -->
 
     <!-- Work -->
-    <div class="report-stat" id="work">
+    <section class="report-stat" id="work" aria-label="Work activity report">
       <div class="border-img">
         <img src="images/icon-work.svg" alt="icon-work">
       </div>
       <div class="type-stat">
         <h2>Work</h2>
-        <img src="images/icon-ellipsis.svg" alt="work-ellipsis">
+        <img src="images/icon-ellipsis.svg" alt="">
       </div>
 
       <div class="timeframe-hours">
         <span>5hrs</span>
         <span>Previous - 7hrs</span>
       </div>
-    </div>
+    </section>
     <!-- Work -->
 
     <!-- Play -->
-    <div class="report-stat" id="play">
+    <section class="report-stat" id="play" aria-label="Play activity report">
       <div class="border-img">
         <img src="images/icon-play.svg" alt="icon-play">
       </div>
       <div class="type-stat">
         <h2>Play</h2>
-        <img src="images/icon-ellipsis.svg" alt="work-ellipsis">
+        <img src="images/icon-ellipsis.svg" alt="">
       </div>
 
       <div class="timeframe-hours">
         <span>5hrs</span>
         <span>Previous - 7hrs</span>
       </div>
-    </div>
+    </section>
     <!-- Play -->
 
     <!-- Study -->
-    <div class="report-stat" id="study">
+    <section class="report-stat" id="study" aria-label="Study activity report">
       <div class="border-img">
         <img src="images/icon-study.svg" alt="icon-study">
       </div>
       <div class="type-stat">
         <h2>Study</h2>
-        <img src="images/icon-ellipsis.svg" alt="work-ellipsis">
+        <img src="images/icon-ellipsis.svg" alt="">
       </div>
 
       <div class="timeframe-hours">
         <span>5hrs</span>
         <span>Previous - 7hrs</span>
       </div>
-    </div>
+    </section>
     <!-- Study -->
 
     <!-- Exercice -->
-    <div class="report-stat" id="exercise">
+    <section class="report-stat" id="exercise" aria-label="Exercise activity report">
       <div class="border-img">
         <img src="images/icon-exercise.svg" alt="icon-exercise">
       </div>
       <div class="type-stat">
         <h2>Exercice</h2>
-        <img src="images/icon-ellipsis.svg" alt="work-ellipsis">
+        <img src="images/icon-ellipsis.svg" alt="">
       </div>
 
       <div class="timeframe-hours">
         <span>5hrs</span>
         <span>Previous - 7hrs</span>
       </div>
-    </div>
+    </section>
     <!-- Exercice -->
 
     <!-- Social -->
-    <div class="report-stat" id="social">
+    <section class="report-stat" id="social" aria-label="Social activity report">
       <div class="border-img">
         <img src="images/icon-social.svg" alt="icon-social">
       </div>
       <div class="type-stat">
         <h2>Social</h2>
-        <img src="images/icon-ellipsis.svg" alt="work-ellipsis">
+        <img src="images/icon-ellipsis.svg" alt="">
       </div>
 
       <div class="timeframe-hours">
         <span>5hrs</span>
         <span>Previous - 7hrs</span>
       </div>
-    </div>
+    </section>
     <!-- Social -->
 
     <!-- Self Care -->
-    <div class="report-stat" id="self-care">
+    <section class="report-stat" id="self-care" aria-label="Self care activity report">
       <div class="border-img">
         <img src="images/icon-self-care.svg" alt="icon-self-care">
       </div>
       <div class="type-stat">
         <h2>Self Care</h2>
-        <img src="images/icon-ellipsis.svg" alt="work-ellipsis">
+        <img src="images/icon-ellipsis.svg" alt="">
       </div>
 
       <div class="timeframe-hours">
         <span>5hrs</span>
         <span>Previous - 7hrs</span>
       </div>
-    </div>
+    </section>
     <!-- Self care -->
   </main>
 </body>

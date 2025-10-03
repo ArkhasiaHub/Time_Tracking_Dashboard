@@ -22,6 +22,14 @@ function getSelectedLiChild(id) {
 }
 
 async function handle_button(e) {
+    buttons.forEach(b => {
+        b.setAttribute('aria-selected', false);
+        b.setAttribute('tabindex', -1);
+    });
+    
+    e.target.setAttribute('aria-selected', true);
+    e.target.setAttribute('tabindex', 0);
+
     const [selectedLiChild, timeframe] = getSelectedLiChild(e.target.id);
     removeCurrentTimeFrame();
     addSelectedTimeFrame(selectedLiChild);
