@@ -9,7 +9,8 @@
   <link href="css/profile.css" rel="stylesheet" type="text/css">
   <link href="css/report_stat.css" rel="stylesheet" type="text/css">
 
-  <script defer src="script/main.js"></script>
+  <script defer src="script/handle_buttons.js" type="module"></script>
+  <script defer src="script/fetch_data.js" type="module"></script>
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
@@ -26,10 +27,10 @@
         </div>
       </div>
 
-      <ul>
-        <li class="selected-timeframe">Daily</li>
-        <li>Weekly</li>
-        <li>Monthly</li>
+      <ul id="timeframe-list">
+        <li class="selected-timeframe"><button id="button-daily">Daily</button></li>
+        <li><button id="button-weekly">Weekly</button></li>
+        <li><button id="button-monthly">Monthly</button></li>
       </ul>
     </div>
     <!-- Profile end -->
@@ -86,12 +87,12 @@
     <!-- Study -->
 
     <!-- Exercice -->
-    <div class="report-stat" id="exercice">
+    <div class="report-stat" id="exercise">
       <div class="border-img">
-        <img src="images/icon-exercise.svg" alt="icon-study">
+        <img src="images/icon-exercise.svg" alt="icon-exercise">
       </div>
       <div class="type-stat">
-        <h2>Study</h2>
+        <h2>Exercice</h2>
         <img src="images/icon-ellipsis.svg" alt="work-ellipsis">
       </div>
 

@@ -30,7 +30,7 @@
     background-color: hsl(348, 100%, 68%);
 }
 
-#exercice .border-img {
+#exercise .border-img {
     background-color: hsl(145, 58%, 55%);
 }
 
@@ -92,6 +92,14 @@
 }
 
 @media (min-width: 1024px) {
+    .report-stat {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .report-stat:hover {
+        transform: translateY(-10px);
+    }
+
     #work  {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
